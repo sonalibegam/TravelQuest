@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+a h1{
+    color: #0d0120;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.aaa{
+    color: #d30e4c;
+}
+
+
+
+#searchbtn{
+    border-style: none;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0 ;
+
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-3{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-3 img{
+    max-width: 80%;
+    padding: 50px 0 ;
+    display: flex;
+
+}
+
+.account-page{
+    padding: 50px 0;
+   
+
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+
+}
+form .btnn{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    justify-content: center;
+}
+form .btnn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+
+}
+
+.rows::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+
+footer{
+    background: #343434;
+    padding-top: 50px;
+
+}
+
+.contain{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 33.3%;
+
+}
+
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.footer-contain{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footer-contain ul{
+    text-align: center;
+}
+
+#list{
+    padding: 0;
+    
+}
+
+#list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+#list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50% -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+#list li:hover::before{
+    width: 70;
+
+
+}
+
+.icons{
+    text-align: center;
+    padding: 0;
+}
+
+.icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.icons i{
+    color: white;
+    font-size: 25px;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+
+.icons i:hover{
+    color: #f18930;
+}
+
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px;
+    margin-top:50px ;
+}
+
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 10px;
+    padding: 7px;
+}
+
+.para{
+    color: white;
+}
+
+.link{
+    color: white;
+}
+
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #e7d0d0;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+form button:hover{
+    background: #563434;
+}
+
+
+.testimonial{
+    padding-top: 50px;
+}
+.testimonial .col-4{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-4 img{
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 70%;
+}
+.testimonial .col-4:hover{
+    transform: translateY(-10px);
+}
+
+.col-4{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-4 h3{
+    font-weight: 600;
+    color: #a00732;
+    font-size: 16px;
+}
+
+.seeall button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.seeall button:hover{
+    background: #563434;
+}
+
+.ratings{
+    color: #d30e4c;
+}
+

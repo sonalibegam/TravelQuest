@@ -1,0 +1,152 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Document</title>
+ </head>
+ <link rel="stylesheet" href="style.css">
+ <body>
+     
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                   <a href="index.html"><h1>TraVelQuesT</h1></a>
+                </div>
+
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html" class="aaa">Home</a></li>
+                        <li><a href="places.html" class="aaa">Places</a></li>
+                        <li><a href="about.html" class="aaa" >About</a></li>
+                        <li><a href="contact.html" class="aaa">Contact</a></li>
+                        <li><a href="account.html" class="aaa">Account</a></li>
+                    </ul>
+
+                    <input type="text" placeholder="Enter Location" id="searchBar"  > 
+                    <button id="searchbtn"><i class="uil uil-search"></i></button>
+                   
+                </nav>
+            </div>
+   
+        </div>
+
+    </div>
+             
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="photos/culture.png" width="100%">
+                </div>
+                <div class="col-2">
+                   <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                      <span onclick="register()">Register</span>
+                      <hr id="Indicator">
+                    </div>
+
+                   <form id="LoginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btnn">Login</button>
+                    <br>
+                    <a href="">Forgot Password</a>
+                   </form>
+
+                   <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btnn">Register</button>
+            
+                   </form>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+<br>
+
+  <div class="rows">
+          <div class="column">
+            <img src="photos/tea garden.avif" width="100%">
+          </div>
+          <div class="column">
+            <img src="photos/culture2.jpg" width="98%">
+          </div>
+          <div class="column">
+            <img src="photos/Montang-in-Tripura-1200x720.jpg" width="94%">
+          </div>
+        
+
+
+  </div>
+
+  
+  <footer>
+          
+    <div class="contain">
+      <div class="footer-contain">
+        <h3>Contact Us</h3>
+        <p class="para">Email:Info@example.com</p>
+        <p class="para">Phone: +91 45567 78657</p>
+        <p class="para">Address: kamalghat 777 street</p>
+      </div>
+      <div class="footer-contain">
+        <h3>Quick Links</h3>
+        <ul class="list">
+          <li class="lint"><a href="index.html">Home</a></li>
+          <li class="lint"><a href="places.html">Places</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="lint"><a href="contact.html">Contact</a></li>
+          <li class="lint"><a href="account.html">Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-contain">
+           <h3>Follow Us</h3>
+           <li class="icons" id="list"><a href="https://www.facebook.com/"></a> <i class="uil uil-facebook-f"></i></li>
+           <li class="icons" id="list"><a href="https://www.instagram.com/"></a>  <i class="uil uil-instagram"></i></li>
+           <li class="icons" id="list"><a href="https://www.twitter.com/"></a>   <i class="uil uil-twitter"></i></li>
+
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <p>&copy;2025 TraVelQuesT . All rights reserved</p>
+    </div>
+
+   </footer>
+       
+   
+
+
+    <script>
+        let LoginForm = document.getElementById("LoginForm");
+        let RegForm = document.getElementById("RegForm");
+        let Indicator = document.getElementById("Indicator");
+    
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+    
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+    
+        }
+    
+    </script>
+
+
+ </body>
+ </html>
